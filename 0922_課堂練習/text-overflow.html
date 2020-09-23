@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text overflow</title>
+    <style>
+        .container{
+            width: 100%;
+            display: flex;
+            /* display:flex 分區 */
+        }
+        .box{
+            margin: 10px;
+            background-color: rgb(179, 137, 137);
+            /* text-overflow: ellipsis;  */
+            overflow : hidden; 
+            /* white-space: nowrap; */
+            display: -webkit-box; 
+            -webkit-line-clamp: 2; 
+            -webkit-box-orient: vertical;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident optio sequi ipsa repudiandae magnam quae fugit voluptate dolorem nulla quod ut sunt, eius suscipit accusantium similique porro quaerat eveniet reiciendis?</div>
+        <div class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident optio sequi ipsa repudiandae magnam quae fugit voluptate dolorem nulla quod ut sunt, eius suscipit accusantium similique porro quaerat eveniet reiciendis?</div>
+        <div class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident optio sequi ipsa repudiandae magnam quae fugit voluptate dolorem nulla quod ut sunt, eius suscipit accusantium similique porro quaerat eveniet reiciendis?</div>
+
+    </div>
+</body>
+</html>

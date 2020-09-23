@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background clip text</title>
+    <style>
+        h3{
+            font-size: 100px;
+            background: url(/images/mosaic-3394375_640.jpg);
+            background-clip: text;
+            /* 其它瀏覽器吃這一行 */
+            -webkit-background-clip: text;
+            /* -webkit- 配合chrome瀏覽器 */
+            color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Hello World</h3>
+</body>
+</html>

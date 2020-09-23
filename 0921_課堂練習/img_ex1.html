@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img_ex1</title>
+
+    <style>
+        .circle{
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+        .circle img{
+            width: 100%;
+            /* 設定寬，就可跟複層一樣寬高 等比例縮放 */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- figure圖形意思，也可用div設定框架 -->
+    <figure class="circle">
+        <img src="images/ex1_pic1.jpg" alt="">
+    </figure>
+</body>
+</html>
